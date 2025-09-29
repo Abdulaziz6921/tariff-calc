@@ -5,6 +5,7 @@ import CheckboxField from "./components/CheckboxField";
 import BuyButton from "./components/BuyButton";
 import { fetchTariffs } from "./utils/api";
 import { useCountdown } from "./hooks/useCountdown";
+import modelImg from "./assets/imgs/model.png";
 
 function App() {
   const [tariffs, setTariffs] = useState([]);
@@ -90,7 +91,7 @@ function App() {
           <div className="lg:col-span-4">
             <div className="sticky top-32">
               <img
-                src="./src/assets/imgs/model.png"
+                src={modelImg}
                 alt="Fitness Model"
                 className="w-32 sm:w-40 md:w-56 lg:w-full h-auto mx-auto"
               />

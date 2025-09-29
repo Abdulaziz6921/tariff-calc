@@ -9,7 +9,7 @@ const TariffCard = ({
 }) => {
   const [showDiscount, setShowDiscount] = useState(!isTimerExpired);
 
-  // === Effect: Handle timer expiration & hide discount with delay ===
+  // === Handling timer expiration & hide discount with delay ===
   useEffect(() => {
     if (isTimerExpired && showDiscount) {
       setTimeout(() => {
@@ -52,7 +52,7 @@ const TariffCard = ({
           ХИТ!
         </div>
 
-        {/* Left: Period + Price */}
+        {/* LeftSide */}
         <div className="flex flex-col items-center text-right w-1/2">
           <h3 className="text-xl sm:text-2xl text-white mb-2 font-normal">
             {tariff.period}
@@ -74,7 +74,7 @@ const TariffCard = ({
           )}
         </div>
 
-        {/* Right: Description */}
+        {/* RightSide*/}
         <div className="w-2/3 text-gray-300 text-sm leading-relaxed">
           {tariff.text}
         </div>

@@ -1,5 +1,12 @@
 # Тарифный калькулятор
 
+Веб-приложение для отображения тарифных планов, выбора оптимального тарифа и демонстрации скидок.  
+Сделано на **React + Vite + Tailwind CSS**
+
+## Live Demo
+
+https://chimerical-palmier-cb7629.netlify.app/
+
 ## Стек
 
 - React + Vite
@@ -17,25 +24,6 @@ npm run dev
 
 npm run build
 npm run preview
-
-## Структура
-
-src/
-├── assets/
-├── components/
-│ ├── BuyButton.jsx
-│ ├── CheckBoxField.jsx
-│ ├── TariffCard.jsx
-│ ├── TariffGrid.jsx
-│ ├── Header.jsx
-├── hooks/
-│ └── useCountDown.js
-├── utils/
-│ └── api.js
-├── App.jsx
-└── main.jsx
-tailwind.config.js
-index.html
 
 ## Tailwind config (custom colors)
 
@@ -78,5 +66,3 @@ blink: {
 },
 },
 },
-
-## Live Demo
